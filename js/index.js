@@ -1,5 +1,5 @@
 const preview = document.getElementById("preview");
-const reviewVideo = document.getElementById("recorded");
+const reviewVideo = document.getElementById("review");
 const downloadBtn = document.getElementsByClassName("download")[0];
 const fileInput = document.getElementById("file");
 const outputFiled = document.getElementsByClassName("outputtext")[0];
@@ -23,7 +23,9 @@ async function captureScreen(mediaDeviceOptions) {
     };
     mediaRecorder.start();
     preview.srcObject = mediaStream;
-  } catch (error) {}
+  } catch (error) {
+    console.log("Error", error);
+  }
 }
 
 function downloadVideo(event) {

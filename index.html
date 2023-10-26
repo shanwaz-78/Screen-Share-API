@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jquery Practice</title>
+    <title>Screen Share API</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      async
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <button class="btn"></button>
       <video id="preview" autoplay controls height="200" width="300"></video>
-      <video controls id="recorded" height="200" width="300"></video><br />
-      <button class="download">Download Video</button>
+      <video controls id="review" height="200" width="300"></video
+      ><br />
+      <button class="download" id="download">Download Video</button>
       <input type="file" id="file" />
     </div>
-    <button id="startrecording">Start</button>
+    <button id="startrecording">Start Recording</button>
     <div class="outputtext" contenteditable="true"></div>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"
-  ></script>
   <script src="./js/index.js"></script>
 </html>
