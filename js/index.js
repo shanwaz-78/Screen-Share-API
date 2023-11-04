@@ -38,6 +38,7 @@ function downloadVideo(event) {
   document.body.appendChild(a);
   a.click();
 }
+
 function enableFileReading() {
   fileInput.addEventListener("change", (event) => {
     event.preventDefault();
